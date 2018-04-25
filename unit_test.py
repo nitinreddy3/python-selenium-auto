@@ -26,6 +26,9 @@ class PythonOrgSearch(unittest.TestCase):
         # Submit after details are filled
         driver.find_element(By.XPATH, '//button[contains(text(), "Go")]').click()
 
+        module_list = ["teams", "all-assessments", "my-assessments", "permission-metrix", "team-responses", "configure-assessments",
+            "team-profiles", "team-profile", "hpse-metrics", "metrics-onboarding", "health-metrics"]
+
         self.go_to_team_responses("team-responses")
         self.go_to_team_responses("team-profiles")
         self.go_to_team_responses("hpse-metrics")
@@ -40,7 +43,7 @@ class PythonOrgSearch(unittest.TestCase):
         driver = self.driver
         elemJumpin = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, "jump-in-btn")))
         elemJumpin.click()
-        driver.implicitly_wait(20)
+        driver.implicitly_wait(10)
 
     def go_to_team_responses(self, class_name):
         driver = self.driver

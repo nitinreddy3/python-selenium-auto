@@ -20,4 +20,6 @@ def go_to_team_responses(self, class_name):
     driver = self.driver
     teamResponse = WebDriverWait(driver, 10).until(EC.visibility_of_element_located((By.CLASS_NAME, class_name)))
     teamResponse.click()
+    assessment = WebDriverWait(driver, 10).until(EC.visibility_of_element_located((By.ID, 'Capability Maturity Model v3')))
+    assessment.click()
     time.sleep(10)

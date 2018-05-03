@@ -3,6 +3,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from utility.common_methods import open_login_pop_up, on_click_fields, go_to_team_responses
 
+
 class PythonOrgSearch(unittest.TestCase):
 
     def setUp(self):
@@ -18,7 +19,7 @@ class PythonOrgSearch(unittest.TestCase):
 
         # Code to fill in user name and password
         on_click_fields(self, "login-username", "admin")
-        on_click_fields(self, "login-password", "cmmAdmin#1")
+        on_click_fields(self, "login-password", "QJLs1i3B")
 
         # Submit after details are filled
         driver.find_element(By.XPATH, '//button[contains(text(), "Go")]').click()
@@ -33,6 +34,7 @@ class PythonOrgSearch(unittest.TestCase):
             go_to_team_responses(self, "hpse-metrics")
             go_to_team_responses(self, "metrics-onboarding")
             go_to_team_responses(self, "health-metrics")
+
 
 if __name__ == "__main__":
     unittest.main()

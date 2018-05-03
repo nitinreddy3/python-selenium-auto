@@ -3,6 +3,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from utility.common_methods import on_click_fields, open_login_pop_up, go_to_team_responses
 
+
 class PythonOrgSearch(unittest.TestCase):
 
     def setUp(self):
@@ -30,6 +31,7 @@ class PythonOrgSearch(unittest.TestCase):
             go_to_team_responses(self, "hpse-metrics")
             go_to_team_responses(self, "metrics-onboarding")
             go_to_team_responses(self, "health-metrics")
+
 
 if __name__ == "__main__":
     unittest.main()

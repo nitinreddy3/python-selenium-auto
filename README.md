@@ -5,6 +5,13 @@
 
 # Python-Selenium
 
+Docs
+
+- [Selenium-python](http://selenium-python.readthedocs.io/)
+
+- [Python](https://www.python.org/)
+
+
 Automation scripts for web automation
 
 - This project contains scripts for web automation specific to a project.
@@ -21,3 +28,5 @@ Tool required to run the .py files
 - Selemium - pip install selenium
 
 - Selenium Webdriver - pip install selenium-webdriver
+
+

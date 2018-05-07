@@ -25,8 +25,8 @@ class PythonOrgSearch(unittest.TestCase):
         driver.find_element(By.XPATH, '//button[contains(text(), "Go")]').click()
 
         if driver.find_element_by_partial_link_text('Admin').is_displayed:
-            go_to_team_responses(self, "all-assessments")
             go_to_team_responses(self, "teams")
+            go_to_team_responses(self, "all-assessments")
             go_to_team_responses(self, "permission-metrix")
             go_to_team_responses(self, "team-responses")
             go_to_team_responses(self, "configure-assessments")

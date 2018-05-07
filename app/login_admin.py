@@ -11,7 +11,7 @@ class PythonOrgSearch(unittest.TestCase):
 
     def test_search_in_python_org(self):
         driver = self.driver
-        driver.get("http://localhost:9000/")
+        driver.get("https://secat-qa.apps.np.sdppcf.com")
         self.assertIn("Telstra Software Engineering Capability Assessment Tool", driver.title)
 
         # Code to open modal pop up
@@ -25,8 +25,8 @@ class PythonOrgSearch(unittest.TestCase):
         driver.find_element(By.XPATH, '//button[contains(text(), "Go")]').click()
 
         if driver.find_element_by_partial_link_text('Admin').is_displayed:
-            go_to_team_responses(self, "teams")
             go_to_team_responses(self, "all-assessments")
+            go_to_team_responses(self, "teams")
             go_to_team_responses(self, "permission-metrix")
             go_to_team_responses(self, "team-responses")
             go_to_team_responses(self, "configure-assessments")

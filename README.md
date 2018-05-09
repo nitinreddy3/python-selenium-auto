@@ -7,6 +7,8 @@
 
 Docs
 
+- [Selenium](https://www.seleniumhq.org/docs/)
+
 - [Selenium-python](http://selenium-python.readthedocs.io/)
 
 - [Python](https://www.python.org/)
